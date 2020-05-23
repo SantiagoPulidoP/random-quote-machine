@@ -1,38 +1,40 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
 .App {
   text-align: center;
+  background-color: azure;
+  position: relative;
+  min-height: 20vh;
+  max-width: 40vw;
+  border-radius: 5px;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.cita{
+  font-family: 'Source Sans Pro', sans-serif;
+  display: block;
+  padding: 20px 15px 5px 15px;
+  font-size: 20px;
+  
+
+}
+.autor{
+  font-family: 'Source Sans Pro', sans-serif;
+  display: block;
+  padding-bottom: 10px;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+.boton{
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 10px 0 10px 0;
+  display: inline;
+  
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
