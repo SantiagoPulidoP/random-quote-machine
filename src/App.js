@@ -41,7 +41,7 @@ class App extends Component {
             quote:this.state.citas[a].text,
             autor:this.state.citas[a].author
         });
-        document.querySelector('body').style.backgroundColor = 'red';
+        
        
     }
         
@@ -50,7 +50,7 @@ class App extends Component {
             <div className='App'>              
                <Cita quote = {this.state.quote}/>
                <Autor author = {this.state.autor}/>
-               <Change name = 'Next Quote' funHola = {this.hola} />
+               <Change name = 'Next Quote' funHola = {this.hola} cita={this.state.quote} autor={this.state.autor}/>
             </div>
         );
     }

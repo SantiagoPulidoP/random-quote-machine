@@ -38,3 +38,37 @@ body{
   
 
 }
+
+.next-twitter{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.twitter{
+  margin-left: 10%;
+  cursor: pointer;
+}
+
+.boton{
+  margin-right: 10%;
+  width: 100px;
+  background-color: #5DADE2;
+  border-radius: 3px;
+  border: 2px solid #808B96;
+  font-weight: 700;
+}
+.boton:hover{
+  background-color: #2874A6;
+}
+.boton:focus{
+  outline: none;
+}
+
+
+@media screen and (min-width:320px) and (max-width:430px  ){
+ .App{
+    max-width: 80%;
+    margin:auto;
+  }
+}

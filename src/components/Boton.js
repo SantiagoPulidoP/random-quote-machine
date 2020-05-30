@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faTwitter } from '@fortawesome/free-brands-svg-icons'
 
 class Change extends Component {
     constructor(props) {
@@ -7,9 +9,16 @@ class Change extends Component {
     }
 
     render() { 
-       const {name,funHola} = this.props;
+       let {name,funHola,cita,autor} = this.props;
        return (  
-            <button className='boton' onClick={funHola}>{name}</button>
+           <div className="next-twitter">
+                <a className="twitter" 
+                href={`https://twitter.com/intent/tweet?text= ${cita} --${autor}`} 
+                target="_blank">
+                    <FontAwesomeIcon icon={faTwitter}  size="lg" color='#00acee'/>
+                </a> 
+               <button className='boton' onClick={funHola}>{name}</button>
+           </div>
         );
     }
 }
